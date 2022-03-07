@@ -8,7 +8,7 @@ import logo from '../assets/images/Logo-2.png'
 
 const footerAboutLinks = [
         {
-                display: "Giới Thiệu",
+                display: "Giới thiệu",
                 path: "/about"
         },
         {
@@ -26,8 +26,9 @@ const footerAboutLinks = [
         {
                 display: "Hệ thống cửa hàng",
                 path: "/about"
-        },
+        }
 ]
+
 const footerCustomerLinks = [
         {
                 display: "Chính sách đổi trả",
@@ -40,7 +41,7 @@ const footerCustomerLinks = [
         {
                 display: "Chính sách hoàn tiền",
                 path: "/about"
-        },
+        }
 ]
 const Footer = () => {
         return (
@@ -57,14 +58,20 @@ const Footer = () => {
                                                         Tổng đài hỗ trợ
                                                 </div>
                                                 <div className="footer__content">
-                                                        <p>Liên hệ đặt hàng <strong>0379523355</strong></p>
-                                                        <p>Thắc mắc đơn hàng </p>
-                                                        <p>Góp y, Khiếu nại </p>
+                                                        <p>
+                                                                Liên hệ đặt hàng <strong>0123456789</strong>
+                                                        </p>
+                                                        <p>
+                                                                Thắc mắc đơn hàng <strong>0123456789</strong>
+                                                        </p>
+                                                        <p>
+                                                                Góp ý, khiếu nại <strong>0123456789</strong>
+                                                        </p>
                                                 </div>
                                         </div>
                                         <div>
                                                 <div className="footer__title">
-                                                        Quay lại Yolo
+                                                        Về Yolo
                                                 </div>
                                                 <div className="footer__content">
                                                         {
@@ -76,7 +83,6 @@ const Footer = () => {
                                                                         </p>
                                                                 ))
                                                         }
-
                                                 </div>
                                         </div>
                                         <div>
@@ -93,7 +99,6 @@ const Footer = () => {
                                                                         </p>
                                                                 ))
                                                         }
-
                                                 </div>
                                         </div>
                                         <div className="footer__about">
@@ -103,14 +108,12 @@ const Footer = () => {
                                                         </Link>
                                                 </p>
                                                 <p>
-                                                        Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng triệu 
-                                                        người tiêu dùng Việt. Hãy cùng Yolo hướng đến mục tiêu năng động , 
-                                                        tích cực hơn
+                                                        Hướng đến mục tiêu mang lại niềm vui ăn mặc mới mỗi ngày cho hàng triệu người tiêu dùng Việt. Hãy cùng Yolo hướng đến một cuộc sống năng động, tích cực hơn.
                                                 </p>
                                         </div>
                                 </Grid>
-                        </div >
-                </footer >
+                        </div>
+                </footer>
         )
 }
 

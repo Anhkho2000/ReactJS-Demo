@@ -9,7 +9,7 @@ const Grid = props => {
 
         const col = props.col ? `grid-col-${props.col}` : '';
         const mdCol = props.mdCol ? `grid-md-${props.mdCol}` : '';
-        const smCol = props.smCol ? `grid-col-${props.smCol}` : '';
+        const smCol = props.smCol ? `grid-col-sm-${props.smCol}` : '';
 
         return (
                 <div className={`gird ${col} ${smCol} ${mdCol}`} style = {style}>

@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
+import Button from './Button'
 
 const HeroSlider = props => {
 
@@ -10,14 +11,14 @@ const HeroSlider = props => {
 
         const [activeSlide, setActiveSlide] = useState(0);
 
-        
+
 
         const nextSlide = useCallback(
                 () => {
                         const index = activeSlide + 1 === data.length ? 0 : activeSlide + 1;
                         setActiveSlide(index);
                 },
-                [activeSlide,data]
+                [activeSlide, data]
         )
 
         const prevSlide = () => {
@@ -30,8 +31,8 @@ const HeroSlider = props => {
         useEffect(() => {
                 if (props.auto) {
                         const slideAuto = setInterval(() => {
-                        nextSlide();
-                }, timeOut);
+                                nextSlide();
+                        }, timeOut);
                         return () => {
                                 clearInterval(slideAuto);
                         }
@@ -88,7 +89,14 @@ const HeroSliderItem = props => (
                         </div>
                         <div className="hero-slider__item__info__btn">
                                 <Link to={props.item.path}>
-                                        <button>Xem chi tiết</button>
+                                        <Button
+                                                backgroundColor={props.item.color}
+                                                icon="bx bx-cart"
+                                                animation={true}
+                                                // size="sm"
+                                        >
+                                                Xem chi tiết
+                                        </Button>
                                 </Link>
                         </div>
                 </div>

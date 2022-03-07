@@ -11,6 +11,7 @@
 }
 
 html {
+    // font-size: 62.5%;
     font-size: 13px;
 }
 
@@ -70,7 +71,7 @@ img {
 .container {
     width: 100%;
     max-width: 1620px;
-    padding: 0 150px;
+    padding: 0 100px;
     margin: auto;
 
     @include tablet {

@@ -4,14 +4,14 @@
         overflow: hidden;
         position: relative;
         margin-bottom: 50px;
-        margin-top: calc(#{$header-height} * -1);
+        margin-top: calc(#{$header-height} * -0.75);
 
         @include tablet {
-                margin-top: calc(#{$header-tablet-height} * -1);
+                margin-top: calc(#{$header-tablet-height} * -0.75);
         }
 
         @include mobile {
-                margin-top: calc(#{$header-mobile-height} * -1);
+                margin-top: calc(#{$header-mobile-height} * -0.75);
         }
 
         &__item {
